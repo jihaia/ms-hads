@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 app.get('/api', (req, res) => {
-  res.send({hello: 'motto'});
+  res.send({hello: process.env.sample});
 });
 
 app.post('/api', (req, res) => {
